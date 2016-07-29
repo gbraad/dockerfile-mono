@@ -1,7 +1,7 @@
 FROM registry.gitlab.com/gbraad/fedora:24
 MAINTAINER Gerard Braad <me@gbraad.nl>
 
-RUN dnf install -y curl unzip; \
+RUN dnf install -y curl unzip "dnf-command(config-manager)"; \
     rpm --import "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF"; \
     dnf config-manager --add-repo http://download.mono-project.com/repo/centos/; \
     dnf install -y mono-complete openssl-devel libunwind --refresh; \
