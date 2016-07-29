@@ -8,7 +8,8 @@ RUN dnf install -y curl; \
 
     dnf install -y libuv libuv-devel; \
 
-    curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh; \
-
-    dnvm install latest -r mono; \
-    dnvm install latest -r coreclr
+    curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh; \
+    
+    bash -c "source ~/.dnx/dnvm/dnvm.sh && \
+             dnvm install latest -r mono && \
+             dnvm install latest -r coreclr"
