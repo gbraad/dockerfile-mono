@@ -6,7 +6,7 @@ RUN dnf install -y curl; \
     dnf config-manager --add-repo http://download.mono-project.com/repo/centos/; \
     dnf install -y mono-complete openssl-devel libunwind --refresh; \
 
-    dnf install libuv libuv-devel; \
+    dnf install -y libuv libuv-devel; \
 
     curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh; \
 
