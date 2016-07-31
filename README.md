@@ -12,14 +12,20 @@ Docker container containing Mono
 
 Available as an automated builds at the GitLab [container registry](https://gitlab.com/gbraad/mono/container_registry).
 
-  * Fedora 24: `docker pull registry.gitlab.com/gbraad/mono:fedora`
+  * CentOS 7:  
+    `docker pull registry.gitlab.com/gbraad/mono:centos`
+  * Fedora 24:  
+    `docker pull registry.gitlab.com/gbraad/mono:fedora`
 
 
 ### Docker hub
 
 Available as an automated build from the [Docker registry](https://hub.docker.com/r/gbraad/mono/).
 
-  * Fedora 24: `docker pull gbraad/mono:latest`
+  * CentOS 7:  
+    `docker pull gbraad/mono:centos`
+  * Fedora 24:  
+    `docker pull gbraad/mono:fedora`
 
 
 Authors
