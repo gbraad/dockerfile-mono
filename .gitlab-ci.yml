@@ -2,8 +2,16 @@ image: docker:git
 services:
 - docker:dind
 
+
 build_fedora:
   script:
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
     - docker build -t registry.gitlab.com/gbraad/mono:fedora ./fedora
     - docker push registry.gitlab.com/gbraad/mono:fedora
+
+build_centos:
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - docker build -t registry.gitlab.com/gbraad/mono:centos ./centos
+    - docker push registry.gitlab.com/gbraad/mono:centos
+
