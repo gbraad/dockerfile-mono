@@ -28,6 +28,35 @@ Available as an automated build from the [Docker registry](https://hub.docker.co
     `docker pull gbraad/mono:f24`
 
 
+Usage
+-----
+
+
+### Setup an alias
+
+Setup a local alias makes running the container a lot easier
+
+
+#### Container based on _CentOS_
+
+```
+$ alias posh='docker run -it --rm -v $PWD:/workspace registry.gitlab.com/gbraad/mono:c7'
+```
+
+
+### Issue command
+
+```
+$ posh
+PowerShell 
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS /workspace> 
+```
+
+Note: the current directory will be available as `/workspace`.
+
+
 Authors
 -------
 
