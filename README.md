@@ -4,7 +4,7 @@ Mono
 !["Prompt"](https://raw.githubusercontent.com/gbraad/assets/gh-pages/icons/prompt-icon-64.png)
 
 
-Docker container containing Mono
+Docker container containing Mono and PowerShell
 
 ## Registries
 
@@ -13,9 +13,9 @@ Docker container containing Mono
 Available as an automated builds at the GitLab [container registry](https://gitlab.com/gbraad/mono/container_registry).
 
   * CentOS 7:  
-    `docker pull registry.gitlab.com/gbraad/mono:centos`
+    `docker pull registry.gitlab.com/gbraad/mono:c7`
   * Fedora 24:  
-    `docker pull registry.gitlab.com/gbraad/mono:fedora`
+    `docker pull registry.gitlab.com/gbraad/mono:f24`
 
 
 ### Docker hub
@@ -23,9 +23,9 @@ Available as an automated builds at the GitLab [container registry](https://gitl
 Available as an automated build from the [Docker registry](https://hub.docker.com/r/gbraad/mono/).
 
   * CentOS 7:  
-    `docker pull gbraad/mono:centos`
+    `docker pull gbraad/mono:c7`
   * Fedora 24:  
-    `docker pull gbraad/mono:fedora`
+    `docker pull gbraad/mono:f24`
 
 
 Authors
